@@ -1,0 +1,84 @@
+.conteudo{
+    background-image: linear-gradient(to bottom right, #35025c, #7b22be);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1{
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.nome p{
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+    text-transform: capitalize; /*Letra Maiúsculas*/
+    color: #d9b4f5;
+    text-shadow: 2px 3px 3px #000000b4;
+}
+
+.inputs{
+    padding: 0 1rem;
+}
+
+.inputs label{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.inputs input{
+    font-size: 1.2rem;
+    outline: 0;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    border: rgba(0, 0, 0, 0);
+    font-weight: 700;
+    background-color: #540094;
+    color: #fff;
+}
+
+::placeholder{
+    color: #d9b4f5;
+}
+
+@media (max-width: 360px) {
+
+    h1{
+        font-size: 1.6rem;
+    }
+
+    .nome p{
+        font-size: 1.4rem;
+    }
+
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .inputs label{
+        font-size: 1rem;
+    }
+
+    .inputs input{
+        margin-top: 0.4rem;
+        font-size: 0.9rem;
+    }
+}
