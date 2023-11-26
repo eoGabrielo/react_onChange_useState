@@ -1,11 +1,27 @@
-# Alteração de valor instantâneo com variável de estado.
+# React: Atualização Instantânea de Valores
 
-Com react é possível pegar um input do usuário e atualizá-lo em algum lugar aplicando o evento onChange no input.<br>
-O onChange é um evento que se atualiza a cada alteração de valores, no caso a cada alteração do input. Foi utilizado uma função do React (useState) para ter uma variável dinâmica(nome), que possa alterar de valor sempre que necessário.<br>
-<br>
-Dentro do e vento onChange criamos uma arrow function que recebe o evento do input que no caso é toda a alteração dos valores e chamamos o setNome do useState para receber essa alteração colocando dentro dos parentes que queremos pegar<br>
-o evento . somente . valor -> setNome(e.target.value).
+Este projeto exemplifica a capacidade do React de capturar a entrada do usuário e atualizá-la dinamicamente em um local específico, utilizando o evento `onChange` em um campo de entrada. O evento `onChange` é acionado a cada alteração de valor no campo, e para facilitar essa dinâmica, empregamos a função `useState` do React para criar uma variável dinâmica (`nome`), permitindo atualizações instantâneas.
 
-<strong> < input onChange={(e) => setNome(e.target.value)} type="text"></input > </strong>
+## Funcionamento
 
-E para finalizar foi adicionado na estrutura HTML a variável dinâmica (nome), que sera alterada a cada alteração de valor do input.
+Dentro do evento `onChange`, uma arrow function é criada para receber o evento do input, que representa todas as alterações de valores. O `setNome` do `useState` é utilizado para capturar e atualizar essa alteração, atribuindo o valor desejado, obtido através de `e.target.value`.
+
+```jsx
+<input onChange={(e) => setNome(e.target.value)} type="text">
+```
+
+## Integração com HTML
+
+A variável dinâmica `nome`, criada com `useState`, é integrada à estrutura HTML, proporcionando uma representação visual imediata de cada alteração de valor no input.
+
+```jsx
+{/* Sua estrutura HTML aqui */}
+<div>{nome}</div>
+```
+
+## Como Usar
+
+1. Clone o repositório.
+2. Instale as dependências usando `npm install`.
+3. Inicie o aplicativo com `npm start`.
+4. Abra o navegador e acesse o aplicativo.
